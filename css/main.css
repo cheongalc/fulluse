@@ -1,0 +1,39 @@
+/*General Definitions*/
+
+body {
+	background-color: #FAFAFA !important;
+}
+
+/*Images*/
+
+img {
+	image-rendering: auto;
+  	image-rendering: crisp-edges;
+  	image-rendering: pixelated;
+}
+
+/*paragraph*/
+
+p {
+	font-size: 16px;
+}
+
+code {
+	color: #E65100 !important;
+	text-decoration-color: #E65100 !important;
+}
+
+.page-header-right {
+	text-align: right;
+}
+
+.p-right {
+	text-align: right !important;
+}
+
+.home-section {
+	padding-bottom: 10px;
+}
+
+
+	
