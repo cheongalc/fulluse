@@ -1,0 +1,50 @@
+/*Navigation Bar*/
+
+nav {
+	border-radius: 0px !important;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+	margin-bottom: 0px !important;
+	border: none !important;
+	z-index: 3;
+	background-color: #8BC34A !important;
+}
+
+
+ul.nav li a {
+	color: #FFF !important;
+}
+
+@media screen and (max-width: 750px) {
+	ul.dropdown-menu li a {
+		color: #FFF !important;
+	}
+}
+
+@media screen and (min-width: 751px) {
+	ul.dropdown-menu li a {
+		color: #212121 !important;
+	}
+}
+
+
+
+ul.nav li.active a {
+	background-color: #558B2F !important;
+}
+
+.navbar-header a.navbar-brand {
+	color: #FFF !important;
+}
+
+.navbar-inverse .navbar-toggle {
+	background-color: #558B2F !important;
+	border-color: #558B2F !important;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-form {
+	border-color: #558B2F !important;
+}
+
+.navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a{
+	background-color: #558B2F !important;
+}
