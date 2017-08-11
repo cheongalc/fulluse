@@ -19,6 +19,7 @@ p {
 }
 
 code {
+<<<<<<< HEAD
 	color: #000000 !important;
 	text-decoration-color: #000000 !important;
 }
@@ -26,6 +27,12 @@ code {
 a{
 	color:white;
 }
+=======
+	color: #E65100 !important;
+	text-decoration-color: #E65100 !important;
+}
+
+>>>>>>> origin/master
 .page-header-right {
 	text-align: right;
 }

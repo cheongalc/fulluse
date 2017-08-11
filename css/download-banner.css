@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Download Banner*/
 
 .download-banner {
@@ -117,4 +118,125 @@
 		box-shadow: 0px 10px 10px rgba(0,0,0,0.15);
 	}
 
+=======
+/*Download Banner*/
+
+.download-banner {
+	height: 100;
+	position: relative;
+	margin-top: 50px;
+	background-color: #558B2F;
+	color: #FFF !important;
+}
+
+.media {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+.media-heading {
+	position: absolute;
+	top: 30%;
+	transform: translateY(-50%);
+}
+
+.media-body p {
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+} 
+
+.media-body button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+	transition: 0.3s ease;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+}
+
+.media-body button:hover {
+	background-color: rgb(230,230,230);
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.15);
+}
+
+.media-body {
+	padding: 10px !important;
+}
+
+@media screen and (max-width: 966px) {
+	.media-heading {
+		font-size: 26px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.download-banner .container {
+		padding-top: 25px !important;
+	}
+
+	.media, .media-body {
+		overflow: visible !important;
+	}
+
+	.media-heading {
+		position: static;
+		font-size: 21px;
+	}
+
+	.media-body p {
+		padding-top: 10px;
+		position: static;
+	} 
+
+	.media-body button {
+		position: static;
+		transition: 0.3s ease;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+	}
+
+	.media-body button:hover {
+		background-color: rgb(230,230,230);
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.15);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.media-right img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 414px) {
+
+	.download-banner .container {
+		padding-top: 20px !important;
+	}
+
+	.media, .media-body {
+		overflow: visible !important;
+	}
+
+	.media-heading {
+		position: static;
+		font-size: 21px;
+	}
+
+	.media-body p {
+		padding-top: 10px;
+		position: static;
+	} 
+
+	.media-body button {
+		position: static;
+		transition: 0.3s ease;
+		box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+	}
+
+	.media-body button:hover {
+		background-color: rgb(230,230,230);
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.15);
+	}
+
+>>>>>>> origin/master
 }
