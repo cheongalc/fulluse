@@ -46,5 +46,110 @@ code {
 	padding-bottom: 10px;
 }
 
+img.img-team {
+	display: block;
+	margin: auto;
+}
+
+
+@media screen and (min-width: 1000px) {
+	.absolute-image-right {
+		position: absolute;
+	    right: 0;
+	    top: -100px;
+	    max-width: 40%;	
+	}
+	.absolute-image-left1 {
+		position: absolute;
+		display: block;
+		left: 0px;
+		margin: 0;
+		max-width: 60%;
+		top: -70px;
+		z-index: 0;
+	}
+	.morning-review-mockup {
+		top: -200px;
+	}
+	.absolute-image-left2 {
+		position: absolute;
+		display: block;
+		left: 100px;
+		margin: 0;
+		max-width: 20%;
+		top: -30px;
+		z-index: 0;
+	}
+	.right {
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+	.absolute-image-right {
+		position: absolute;
+	    right: 0;
+	    top: 20px;
+	    max-width: 30%;	
+	    margin: auto;
+	}
+	.absolute-image-left1 {
+		position: absolute;
+		display: block;
+		left: -10px;
+		top: -5px;
+		margin: 0;
+		max-width: 60%;
+		z-index: 0;
+	}
+	.absolute-image-left2 {
+		position: absolute;
+		display: block;
+		left: -10px;
+		top: -5px;
+		margin: 0;
+		max-width: 30%;
+		z-index: 0;
+	}
+	.right {
+		text-align: right;
+	}
+}
+
+.absolute-image-row {
+	position: relative; overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+	.absolute-image-right {
+		display: block;
+		margin: auto;
+		margin-top: 40px;
+		margin-bottom: -150px;
+		max-width: 40%;
+		text-align: center;
+	}
+
+	.absolute-image-left1 {
+		display: block;
+		margin: auto;
+		max-width: 50%;
+		text-align: center;
+	}
+	.absolute-image-left2 {
+		display: block;
+		margin: auto;
+		max-width: 50%;
+		text-align: center;
+	}
+	.page-header-right, .right, h2 {
+		text-align: justify;
+	}
+}
+
+
+
+
+
 
 	
