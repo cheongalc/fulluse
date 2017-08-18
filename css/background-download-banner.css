@@ -1,0 +1,9 @@
+.background-download-banner {
+			width: 100%;
+			height: 35vw !important;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			background-color: #558B2F;
+}

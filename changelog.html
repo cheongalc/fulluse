@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FullUse | Changelog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/timeline.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/background-download-banner.css">
+	<link rel="icon" href="favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.background-download-banner {
+			display: block;
+		}
+	
+		@media screen and (max-width: 768px) {
+			.background-download-banner {
+				display: none;
+			}
+
+			h1, h2, p {
+				color: #333 !important;
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> 
+			     </button>
+				<a class="navbar-brand" href="index.html">FullUse</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mainNav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+	      			<li class="dropdown active">
+	      				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Journey <span class="caret"/></a>
+	      				<ul class="dropdown-menu">
+				          	<li><a class="dropdown-menu-link" href="changelog.html">Changelog</a></li>
+				          	<li><a class="dropdown-menu-link" href="gallery.html">Gallery</a></li>
+				          	<li><a class="dropdown-menu-link" href="#">Evaluations</a></li>
+	      				</ul>
+	      			</li>
+	      			<li><a href="credits.html">Credits</a></li>
+	      			<li><a href="#">Wiki</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="background-download-banner"></div>
+	<div class="container" style="padding-top: 50px;">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header">
+					 <h1 style="color: #FFF;">Changelog</h1>
+				</div>
+				<ul class="timeline">
+					<li class="timeline-item">
+						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><a href="apk/alpha/v0.0.8 16-8-2017.apk" download>v0.0.8A (Latest Version)</a></h4>
+								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 16 August 2017</small></p>
+							</div>
+							<div class="timeline-body">
+							Bug Fixes:<br>
+							<ul>
+								<li>Fixed bug where Free Time might become a negative floating point number</li>
+								<li>Fixed bug where Morning Review Events Overview showed the number of events in total instead of number of events today.</li>
+							</ul>
+
+							Changes:<br>
+							<ul>
+								<li>Changed the process of adding events to double-clicking the Events Header instead of any space inside the Events Tab.</li>
+								<li>Changed the scrolling delay for Morning Review to be 3.5s.</li>
+
+							</ul>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><a href="apk/alpha/v0.0.7 14-8-2017.apk" download>v0.0.7A</a></h4>
+								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14 August 2017</small></p>
+							</div>
+							<div class="timeline-body">
+							Changes:<br><ul>
+								<li>Added User Tutorial using MaterialShowcaseView and MaterialShowcaseSequence.</li>
+							</ul>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><a href="apk/alpha/v0.0.6 13-8-2017.apk" download>v0.0.6A</a></h4>
+								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13 August 2017</small></p>
+							</div>
+							<div class="timeline-body">
+								Bug Fixes:<br>
+								<ul>
+									<li>Fixed crucial bug in SQLiteDatabase onUpgrade() – now users need not delete the app every time the database structure changes</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><a href="apk/alpha/v0.0.5 12-8-2017.apk" download>v0.0.5A</a></h4>
+								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 12 August 2017</small></p>
+							</div>
+							<div class="timeline-body">
+								Bug Fixes:<br>
+								<ul>
+									<li>Fixed bug that penalized users for a dehydrating tree even when they just opened the app after installation</li>
+									<li>Fixed bug that the free time did not update after users deleted events</li>
+								</ul>
+								Changes:<br>
+								<ul>
+									<li>To add a short term task, simply double-tap on the 'Short Term Tasks' Tab</li>
+									<li>To add a long term task, simply double-tap on the 'Long Term Tasks' Tab</li>
+									<li>To add an event, simply double tap on any area inside the Events tab.</li>
+									<li>Added notifications for 30 minutes, 15 minutes and 5 minutes before an Event starts.</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><a href="apk/alpha/v0.0.4 8-8-2017.apk" download>v0.0.4A</a></h4>
+								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 8 August 2017</small></p>
+							</div>
+							<div class="timeline-body">
+								Bug Fixes:<br>
+								<ul>
+									<li>Fixed bug that the water is 105% in Morning Review</li>
+									<li>Fixed bug that the FloatingActionButton blocks the delete icon of Long Term Tasks</li>
+								</ul>
+								Changes:<br>
+								<ul>
+									<li>Removed Floating Action Button</li>
+									<li>Users now double-tap to add tasks or events</li>
+									<li>Added Tagging Function, allowing users to classify their tasks according to self-defined tags.</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><a href="apk/alpha/v0.0.3 2-8-2017.apk" download>v0.0.3A</a></h4>
+								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2 August 2017</small></p>
+							</div>
+							<div class="timeline-body">
+								Bug Fixes:<br>
+								<ul>
+									<li>Fixed bug that the task name overflows, covering the priority exclamation mark</li>
+									<li>Fixed bug that the WheelDatePicker spills over onto slide progress RadioButtons in AddShortTermTask.java</li>
+								</ul>
+								Changes:<br>
+								<ul>
+									<li>Shortened AutoScrolling for Morning Review to 2s from 5s</li><li>
+									Added Settings Activity</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><a href="apk/alpha/v0.0.2 28-7-2017.apk" download>v0.0.2A</a></h4>
+								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 28 July 2017</small></p>
+							</div>
+							<div class="timeline-body">
+							Bug Fixes:<br>
+								<ul>
+									<li>Fixed bug that Morning Review does not show up</li>
+									<li>Fixed bug that small screen sizes cause the buttons on EditShortTermTask.java, EditLongTermTask.java, EditEvent.java to become squashed and break text to newline</li>
+									<li>Fixed bug that the DONE button on EditShortTermTask.java, EditLongTermTask.java does not appear</li>
+									<li>Fixed Locale problem causing toolbar heading of Event Calendar tab to appear in half-chinese, half-english</li>
+									<li>Fixed Locale problem causing CompactCalendarView to display Chinese 周 for days of the week</li>
+									<li>Fixed bug that event notifications would not appear</li>
+								</ul>
+							Changes:<br>
+								<ul>
+									<li>Changed Dashboard Tab icon to a White ic_full_tree_100 icon</li>
+									<li>Added auto-scroll for Morning Review</li>
+									<li>Added ScrollViews to each of the Edit Task / Event activities</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-item">
+						<div class="timeline-badge"><i class="glyphicon glyphicon-off"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title"><a href="apk/alpha/v0.0.1 27-7-2017.apk" download>v0.0.1A</a></h4>
+								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 27 July 2017</small></p>
+							</div>
+							<div class="timeline-body">
+								<p>Initial alpha release through Google Drive apk.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
