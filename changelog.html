@@ -16,6 +16,10 @@
 		.background-download-banner {
 			display: block;
 		}
+
+		p {
+			text-align: justify;
+		}
 	
 		@media screen and (max-width: 768px) {
 			.background-download-banner {
@@ -63,7 +67,7 @@
 				<div class="page-header">
 					 <h1 style="color: #FFF;">Changelog</h1>
 				</div>
-				<ul class="timeline">
+				<ul id="timeline-view" class="timeline">
 					<li class="timeline-item">
 						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
 						<div class="timeline-panel">
@@ -93,7 +97,7 @@
 							<div class="timeline-body">
 							Bug Fixes:<br>
 							<ul>
-								<li>Fixed bug where Free Time might become a negative floating point number</li>
+								<li>Fixed bug where the amount of Free Time might become a negative floating point number.</li>
 								<li>Fixed bug where Morning Review Events Overview showed the number of events in total instead of number of events today.</li>
 							</ul>
 
@@ -101,7 +105,6 @@
 							<ul>
 								<li>Changed the process of adding events to double-clicking the Events Header instead of any space inside the Events Tab.</li>
 								<li>Changed the scrolling delay for Morning Review to be 3.5s.</li>
-
 							</ul>
 					</li>
 					<li class="timeline-item">
@@ -112,8 +115,9 @@
 								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14 August 2017</small></p>
 							</div>
 							<div class="timeline-body">
-							Changes:<br><ul>
-								<li>Added User Tutorial using MaterialShowcaseView and MaterialShowcaseSequence.</li>
+							Changes:<br>
+							<ul>
+								<li>Added User Tutorial using <code>MaterialShowcaseView</code> and <code>MaterialShowcaseSequence</code>.</li>
 							</ul>
 					</li>
 					<li class="timeline-item">
@@ -126,7 +130,7 @@
 							<div class="timeline-body">
 								Bug Fixes:<br>
 								<ul>
-									<li>Fixed crucial bug in SQLiteDatabase onUpgrade() – now users need not delete the app every time the database structure changes</li>
+									<li>Fixed crucial bug in <code>SQLiteDatabase</code> <code>onUpgrade()</code> – now users need not delete the app every time the database structure changes</li>
 								</ul>
 							</div>
 						</div>
@@ -165,13 +169,13 @@
 								Bug Fixes:<br>
 								<ul>
 									<li>Fixed bug that the water is 105% in Morning Review</li>
-									<li>Fixed bug that the FloatingActionButton blocks the delete icon of Long Term Tasks</li>
+									<li>Fixed bug that the <code>FloatingActionButton</code> blocks the delete icon of Long Term Tasks</li>
 								</ul>
 								Changes:<br>
 								<ul>
 									<li>Removed Floating Action Button</li>
 									<li>Users now double-tap to add tasks or events</li>
-									<li>Added Tagging Function, allowing users to classify their tasks according to self-defined tags.</li>
+									<li>Added <b>Tagging Function</b>, allowing users to classify their tasks according to self-defined tags.</li>
 								</ul>
 							</div>
 						</div>
@@ -187,7 +191,7 @@
 								Bug Fixes:<br>
 								<ul>
 									<li>Fixed bug that the task name overflows, covering the priority exclamation mark</li>
-									<li>Fixed bug that the WheelDatePicker spills over onto slide progress RadioButtons in AddShortTermTask.java</li>
+									<li>Fixed bug that the <code>WheelDatePicker</code> spills over onto slide progress <code>RadioButtons</code> in <code>AddShortTermTask.java</code></li>
 								</ul>
 								Changes:<br>
 								<ul>
@@ -208,17 +212,17 @@
 							Bug Fixes:<br>
 								<ul>
 									<li>Fixed bug that Morning Review does not show up</li>
-									<li>Fixed bug that small screen sizes cause the buttons on EditShortTermTask.java, EditLongTermTask.java, EditEvent.java to become squashed and break text to newline</li>
-									<li>Fixed bug that the DONE button on EditShortTermTask.java, EditLongTermTask.java does not appear</li>
-									<li>Fixed Locale problem causing toolbar heading of Event Calendar tab to appear in half-chinese, half-english</li>
-									<li>Fixed Locale problem causing CompactCalendarView to display Chinese 周 for days of the week</li>
+									<li>Fixed bug that small screen sizes cause the buttons on <code>EditShortTermTask.java</code>, <code>EditLongTermTask.java</code>, <code>EditEvent.java</code> to become squashed and break text to newline</li>
+									<li>Fixed bug that the DONE button on <code>EditShortTermTask.java</code>, <code>EditLongTermTask.java</code> does not appear</li>
+									<li>Fixed <code>Locale</code> problem causing toolbar heading of Event Calendar tab to appear in half-chinese, half-english</li>
+									<li>Fixed <code>Locale</code> problem causing <code>CompactCalendarView</code> to display Chinese 周 for days of the week</li>
 									<li>Fixed bug that event notifications would not appear</li>
 								</ul>
 							Changes:<br>
 								<ul>
-									<li>Changed Dashboard Tab icon to a White ic_full_tree_100 icon</li>
+									<li>Changed Dashboard Tab icon to a White <code>ic_full_tree_100</code> icon</li>
 									<li>Added auto-scroll for Morning Review</li>
-									<li>Added ScrollViews to each of the Edit Task / Event activities</li>
+									<li>Added <code>ScrollViews</code> to each of the Edit Task / Event activities</li>
 								</ul>
 							</div>
 						</div>
@@ -231,11 +235,143 @@
 								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 27 July 2017</small></p>
 							</div>
 							<div class="timeline-body">
-								<p>Initial alpha release through Google Drive apk.</p>
+								Initial alpha release through Google Drive apk.
 							</div>
 						</div>
 					</li>
 				</ul>
+				<div id="panel-view">
+					<div class="panel panel-default">
+						<div class="panel-heading"><a href="apk/alpha/v0.0.9 17-8-2017.apk">v0.0.9A (Latest Version)</a></div>
+						<div class="panel-body">
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 17 August 2017</small></p>
+							<p>Bug Fixes:</p>
+							<ul>
+								<li>Fixed bug where Morning Review Events Overview showed the number of events in total instead of number of events today.</li>
+								<li>Fixed bug where the tags of Short Term Tasks were overridden with “~”.</li>
+							</ul>
+							<p>Changes:</p>
+							<ul>
+								<li>Added an item inside OptionsMenu where users can view the current app version.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading"><a href="apk/alpha/v0.0.8 16-8-2017.apk" download>v0.0.8A</a></div>
+						<div class="panel-body">
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 16 August 2017</small></p>
+							<p>Bug Fixes:</p>
+							<ul>
+								<li>Fixed bug where the amount of Free Time might become a negative floating point number.</li>
+								<li>Fixed bug where Morning Review Events Overview showed the number of events in total instead of number of events today.</li>
+							</ul>
+							<p>Changes:</p>
+							<ul>
+								<li>Changed the process of adding events to double-clicking the Events Header instead of any space inside the Events Tab.</li>
+								<li>Changed the scrolling delay for Morning Review to be 3.5s.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading"><a href="apk/alpha/v0.0.7 14-8-2017.apk" download>v0.0.7A</a></div>
+						<div class="panel-body">
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14 August 2017</small></p>
+							<p>Changes:</p>
+							<ul>
+								<li>Added User Tutorial using <code>MaterialShowcaseView</code> and <code>MaterialShowcaseSequence</code>.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading"><a href="apk/alpha/v0.0.6 13-8-2017.apk" download>v0.0.6A</a></div>
+						<div class="panel-body">
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 13 August 2017</small></p>
+							<p>Bug Fixes:</p>
+							<ul>
+								<li>Fixed crucial bug in <code>SQLiteDatabase</code> <code>onUpgrade()</code> – now users need not delete the app every time the database structure changes.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading"><a href="apk/alpha/v0.0.5 12-8-2017.apk" download>v0.0.5A</a></div>
+						<div class="panel-body">
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 12 August 2017</small></p>
+							<p>Bug Fixes:</p>
+							<ul>
+								<li>Fixed bug that penalized users for a dehydrating tree even when they just opened the app after installation</li>
+								<li>Fixed bug that the free time did not update after users deleted events</li>
+							</ul>
+							<p>Changes:</p>
+							<ul>
+								<li>To add a short term task, simply double-tap on the 'Short Term Tasks' Tab</li>
+								<li>To add a long term task, simply double-tap on the 'Long Term Tasks' Tab</li>
+								<li>To add an event, simply double tap on any area inside the Events tab.</li>
+								<li>Added notifications for 30 minutes, 15 minutes and 5 minutes before an Event starts.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading"><a href="apk/alpha/v0.0.4 8-8-2017.apk" download>v0.0.4A</a></div>
+						<div class="panel-body">
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 8 August 2017</small></p>
+							<p>Bug Fixes:</p>
+							<ul>
+								<li>Fixed bug that the water is 105% in Morning Review</li>
+								<li>Fixed bug that the FloatingActionButton blocks the delete icon of Long Term Tasks</li>
+							</ul>
+							<p>Changes:</p>
+							<ul>
+								<li>Removed Floating Action Button</li>
+								<li>Users now double-tap to add tasks or events</li>
+								<li>Added <b>Tagging Function</b>, allowing users to classify their tasks according to self-defined tags.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading"><a href="apk/alpha/v0.0.3 2-8-2017.apk" download>v0.0.3A</a></div>
+						<div class="panel-body">
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2 August 2017</small></p>
+							<p>Bug Fixes:</p>
+							<ul>
+								<li>Fixed bug that the task name overflows, covering the priority exclamation mark</li>
+								<li>Fixed bug that the <code>WheelDatePicker</code> spills over onto slide progress <code>RadioButtons</code> in <code>AddShortTermTask.java</code></li>
+							</ul>
+							<p>Changes:</p>
+							<ul>
+								<li>Shortened AutoScrolling for Morning Review to 2s from 5s</li>
+								<li>Added Settings Activity</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading"><a href="apk/alpha/v0.0.2 28-7-2017.apk" download>v0.0.2A</a></div>
+						<div class="panel-body">
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 28 July 2017</small></p>
+							<p>Bug Fixes:</p>
+							<ul>
+								<li>Fixed bug that Morning Review does not show up</li>
+								<li>Fixed bug that small screen sizes cause the buttons on <code>EditShortTermTask.java</code>, <code>EditLongTermTask.java</code>, <code>EditEvent.java</code> to become squashed and break text to newline</li>
+								<li>Fixed bug that the DONE button on <code>EditShortTermTask.java</code>, <code>EditLongTermTask.java</code> does not appear</li>
+								<li>Fixed <code>Locale</code> problem causing toolbar heading of Event Calendar tab to appear in half-chinese, half-english</li>
+								<li>Fixed <code>Locale</code> problem causing <code>CompactCalendarView</code> to display Chinese 周 for days of the week</li>
+								<li>Fixed bug that event notifications would not appear</li>
+							</ul>
+							<p>Changes:</p>
+							<ul>
+								<li>Changed Dashboard Tab icon to a White <code>ic_full_tree_100</code> icon</li>
+								<li>Added auto-scroll for Morning Review</li>
+								<li>Added <code>ScrollView</code>s to each of the Edit Task / Event activities</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading"><a href="apk/alpha/v0.0.1 27-7-2017.apk" download>v0.0.1A</a></div>
+						<div class="panel-body">
+							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 27 July 2017</small></p>
+							Initial alpha release through Google Drive apk.
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

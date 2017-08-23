@@ -174,8 +174,12 @@
   padding-top: 50px;
 }
 
-.timeline-body {
-  overflow-x: scroll;
+#timeline-view {
+  display: block;
+}
+
+#panel-view {
+  display: none;
 }
 
 @media screen and (min-width: 438px) and (max-width: 768px) {
@@ -190,6 +194,11 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 437px) {
-  
+@media screen and (max-width: 437px) {
+    #timeline-view {
+      display: none;
+    }
+    #panel-view {
+      display: block;
+    }
 }
