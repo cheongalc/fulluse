@@ -1,20 +1,253 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
 	<title>FullUse | Wiki</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/background-download-banner.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.background-download-banner {
+			display: block;
+		}
+
+		p {
+			font-size: 14px;
+			text-align: justify;
+		}
+
+		div.panel-heading {
+			font-size: 16px;
+		}
+
+		h5 {
+			font-size: 15px;
+		}
+
+		a.anchor-fixed {
+			color: #333 !important;
+			text-decoration: none;
+		}
+
+		a.anchor {
+			height: 0px;
+			position: relative;
+			top: -75px;
+			opacity: 0;
+		}
+
+		a.anchor-fixed:hover {text-decoration: none;}
+	
+		@media screen and (max-width: 768px) {
+			.background-download-banner {
+				display: none;
+			}
+
+			h1, h2, p {
+				color: #333 !important;
+			}
+
+		}
+	</style>
 </head>
 <body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> 
+			     </button>
+				<a class="navbar-brand" href="index.html">FullUse</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mainNav">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+	      			<li class="dropdown">
+	      				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Journey <span class="caret"/></a>
+	      				<ul class="dropdown-menu">
+				          	<li><a class="dropdown-menu-link" href="changelog.html">Changelog</a></li>
+				          	<li><a class="dropdown-menu-link" href="gallery.html">Gallery</a></li>
+				          	<li><a class="dropdown-menu-link" href="#">Future Developments</a></li>
+	      				</ul>
+	      			</li>
+	      			<li><a href="credits.html">Credits</a></li>
+	      			<li class="active"><a href="wiki.html">Wiki</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="background-download-banner"></div>
+	<div class="container" style="padding-top: 50px;">
+		<div class="page-header">
+			 <h1 style="color: #FFF;">Wiki</h1>
+		</div>
+		<p class="lead text-justify" style="color: #FFF;">This is the documentation for FullUse. Download the full user manual <a href="doc/manual.doc">here</a>.</p>
+		<div class="panel panel-default">
+			<div class="panel-heading">Purpose of FullUse</div>
+			<div class="panel-body">
+				<p class="text-justify">Students nowadays might feel pressured with the increasing workload. Poor time management also costs students dearly. Physics tutor Tony Chee, 35, who gives tuition to about 150 secondary and junior college students, said: “Closer to the exams, students usually feel there is much content to absorb. As a result of time constraints, they are more stressed and this may affect their revision.” This shows that better time management is needed among students.</p>
 
-</body>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-	<title>FullUse | Wiki</title>
-</head>
-<body>
+				<p class="text-justify">In 2011, researchers conducted a study, asking 739 college students to provide their own perspective as to why students fail courses and drop out of colleges. Respondents saw insufficient academic skills as closely related to the lack of time management skills, often mentioning the two in the same sentence. They even ranked poor time management and poor organizational skills second as a major roadblock to student success.</p>
 
+				<p class="text-justify">FullUse aims to solve these problems by <b>improving the time management skills of students so that they can live a better work life, be it scoring well in tests or meeting deadlines consistently</b>.</p>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">Smart To-Do List</div>
+			<div class="panel-body">
+				<p class="text-justify">FullUse has a Smart To-Do List to help users keep track of what they do. The Smart To Do List is split into 2 sections: the <b>Short Term Tasks</b> and the <b>Long Term Tasks</b>.
+
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#STT" class="anchor-fixed">Short Term Tasks <span class="caret"></span></a><a name="STTHEADER" class="anchor">.</a>
+						</div>
+						<div id="STT" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<p>These denote what users want to do within a few days. (e.g. Math Assignment 1, English Literature Analysis, etc.) They consist of:</p>
+								<ul>
+									<li class="text-justify"><b><a class="anchor-fixed">Task Title</a>:<a name="STTTASKTITLE" class="anchor">.</a></b> The name of the user’s task. After keying in the Task Title, FullUse will automatically come up with suggestions for tags for the task title. Tags can be used to identify tasks by subjects (e.g. tagging “Worksheet 1” as “MATH”). In the To Do List, users can search for tasks by tag as well as edit tasks by tapping on the Task Title.</li>
+									<li class="text-justify"><b><a class="anchor-fixed">Task Priority</a>:<a name="STTTASKPRIORITY" class="anchor">.</a></b> This denotes how important a task is. It is represented by exclamation marks (!!! &rarr; High Priority, !! &rarr; Medium Priority, ! &rarr; Low Priority).  The Smart To Do List is sorted according to priority, with the most important task(s) at the top of the list and bolded.</li>
+									<li class="text-justify"><b><a class="anchor-fixed">Task Due Date</a>:<a name="STTTASKDUEDATE" class="anchor">.</a></b> This denotes when users’ Short Term Task is due by. Users will be notified 2 days and 1 day before the due date, at a specific time that can be set in the settings (default 0900AM). Every time a notification is sent, the task priority will be increased by 1 exclamation mark. This ensures that by the time the task is due, the task’s priority is High (!!!) and it is bolded. Overdue tasks will be highlighted in red and bolded.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion" href="#LTT" class="anchor-fixed">Long Term Tasks <span class="caret"></span></a><a name="LTTHEADER" class="anchor">.</a>
+						</div>
+						<div id="LTT" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<p>These denote tasks which students need many days to complete (e.g. Projects, Revision for examinations, etc). Their structure is very similar to that of Short Term Tasks:</p>
+								<ul>
+									<li class="text-justify"><b><a class="anchor-fixed">Task Title</a>:<a name="LTTTASKTITLE" class="anchor">.</a></b> The name of the user’s task. Same as the Short Term Task; just without a tagging system.</li>
+									<li class="text-justify"><b><a class="anchor-fixed">Task Priority</a>:<a name="LTTTASKPRIORITY"  class="anchor">.</a></b> Same principle as the Short Term Tasks.</li>
+									<li class="text-justify"><b><a class="anchor-fixed">Task End Date</a>:<a name="LTTTASKENDDATE" class="anchor">.</a></b> This represents when the user’s Long Term Task is due. Users will be notified 2 weeks and 1 week before this End Date, at the same time that users are notified of Short Term Tasks. The Task Priority will also increase by 1 exclamation mark every time a notification is sent. FullUse will autocomplete the Long Term Task once its end date is due.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">Event Calendar</div>
+			<div class="panel-body">
+				<p class="text-justify">FullUse has an inbuilt calendar, which allows users to manage both their work and their events.</p>
+
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#EVENTS" class="anchor-fixed">Events <span class="caret"></span></a><a name="EVENTSHEADER" class="anchor">.</a>
+						</div>
+						<div id="EVENTS" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<p>Each Event consists of: </p>
+								<ul>
+									<li class="text-justify"><b><a class="anchor-fixed">Event Title</a>:<a name="EVENTTITLE" class="anchor">.</a></b> The name of the user’s event.</li>
+									<li class="text-justify"><b><a class="anchor-fixed">Event Date Range</a>:<a name="EVENTDATERANGE" class="anchor">.</a></b> This represents the days which the event covers. In FullUse, events can span across many days. By default, the Start Date and the End Date are the same (i.e. spanning only 1 day).</li>
+									<li class="text-justify"><b><a class="anchor-fixed">Event Time Range</a>:<a name="EVENTTIMERANGE" class="anchor">.</a></b> This represents the time range which the event covers. For example, the start date and the start time of an event could be 1200, 19 August 2017, and the end date and end time of the event could be 1445, 20 August 2017.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a data-toggle="collapse" data-parent="#accordion" href="#FREETIME" class="anchor-fixed">Free Time <span class="caret"></span></a><a name="FREETIMEHEADING" class="anchor">.</a>
+						</div>
+						<div id="FREETIME" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<p>This represents the time range which the event covers. For example, the start date and the start time of an event could be 1200, 19 August 2017, and the end date and end time of the event could be 1445, 20 August 2017.</p>
+								<ul>
+									<li class="text-justify">FullUse assumes that each user (targeted at students) has roughly 7.0h of Free Time on weekdays and 12.0h of Free Time on weekends, excluding all after-school commitments like extra lessons/CCA/etc.</li>
+									<li class="text-justify">FullUse calculates the amount of free time in milliseconds for accuracy.</li>
+									<li class="text-justify">FullUse’s smart algorithm does not double-count overlapping events into the Free Time.</li>
+									<li class="text-justify">FullUse’s smart algorithm does not double-count overlapping events into the Free Time.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading"><a class="anchor-fixed">Tree</a><a name="TREE" class="anchor">.</a></div>
+			<div class="panel-body">
+				<p class="text-justify">FullUse allows users to grow their very own Tree while completing tasks. The Tree is intended to be an incentive to complete tasks that raises environmental awareness and makes the user more disciplined.</p>
+				<br>
+				<h5><a class="anchor-fixed">Tree Breakdown</a><a name="TREEBREAKDOWN" class="anchor">.</a></h5>
+				<p>Like any other Tree, the FullUse Tree has 4 stages: Seed &rarr; Shoot &rarr; Sapling &rarr; Tree. The Tree has a Growth attribute which determines its stage as well as a Water attribute which determines its hydration state. Each stage has 5 hydration states:</p>
+				<table class="table table-responsive table-striped">
+					<thead>
+						<tr>
+							<th>Growth</th>
+							<th>Stage</th>
+							<th>Hydration States</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>0% &rarr; 24%</td>
+							<td>Seed</td>
+							<td rowspan="4">
+								<ul>
+									<li>Hydrated</li>
+									<li>3/4 Hydration</li>
+									<li>1/2 Hydration</li>
+									<li>1/4 Hydration</li>
+									<li>Wilted</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>25% &rarr; 49%</td>
+							<td>Shoot</td>
+						</tr>
+						<tr>
+							<td>50% &rarr; 74%</td>
+							<td>Sapling</td>
+						</tr>
+						<tr>
+							<td>75% &rarr; 100%</td>
+							<td>Full Tree</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>If the user’s tree wilts, or the user’s tree reaches 100%, the tree will be reset to a Seed with 0% Growth and 100% Water. The number of trees the user grows to 100% will be recorded.</p>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">Morning Review<a name="MORNINGREVIEWHEADER" class="anchor">.</a></div>
+			<div class="panel-body">
+				<p>FullUse gives users morning reviews on first startup every day. It makes use of swipeable slides for intuitiveness purposes. Users can swipe up or down to transition between the sections of the Morning Review, or sit back and relax as FullUse’s <code>postDelayed</code> Handler automatically scrolls through the sections every 3.5 seconds.</p>
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#MORNINGREVIEW"  class="anchor-fixed">Details <span class="caret"></span></a>
+						</div>
+						<div id="MORNINGREVIEW" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<p>Each Morning Review consists of: </p>
+								<ul>
+									<li class="text-justify"><b><a name="MORNINGREVIEWINTRO" class="anchor-fixed">Intro</a>:</b> Displays which day of FullUse usage it is since installation, as well as today’s date in word form.</li>
+									<li class="text-justify"><b><a name="MORNINGREVIEWSTTOVERVIEW" class="anchor-fixed">Short Term Task Overview</a>:</b> Displays the 4 most important Short Term Tasks, as well as a count of how many Short Term Tasks you have.</li>
+									<li class="text-justify"><b><a name="MORNINGREVIEWLTTOVERVIEW" class="anchor-fixed">Long Term Task Overview</a>:</b> Displays the 4 most important Long Term Tasks as well as a count of how many Long Term Tasks the user has.</li>
+									<li class="text-justify"><b><a name="MORNINGREVIEWEVENTSOVERVIEW" class="anchor-fixed">Events Overview</a>:</b> Displays today’s events, as well as a count of how many Events the user has today.</li>
+									<li class="text-justify"><b><a name="MORNINGREVIEWTREEANALYSIS" class="anchor-fixed">Tree Analysis</a>:</b> This displays the stage of the user’s tree (Seed/Shoot/Sapling/Tree), and shows the tree’s growth and water bars.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
->>>>>>> origin/master
 </html>

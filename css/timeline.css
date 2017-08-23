@@ -173,3 +173,23 @@
 .timeline-container {
   padding-top: 50px;
 }
+
+.timeline-body {
+  overflow-x: scroll;
+}
+
+@media screen and (min-width: 438px) and (max-width: 768px) {
+  .timeline-title {
+    font-size: 13px;
+  }
+  .timeline-heading p {
+    font-size: 10px;
+  }
+  .timeline-body {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 437px) {
+  
+}
