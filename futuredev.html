@@ -17,7 +17,15 @@
 		}
 		
 		h1, h2, p {color: #FFF;}
+
+		.img-show {
+			display: block;
+		}
 	
+		.img-hide {
+			display: none;
+		}
+
 		@media screen and (max-width: 768px) {
 			.background-download-banner {
 				display: none;
@@ -27,6 +35,14 @@
 				color: #333 !important;
 			}
 
+
+			.img-show {
+				display: none;
+			}
+
+			.img-hide {
+				display: block;
+			}
 		}
 
 		.valign-frame {
@@ -45,6 +61,10 @@
 			display: inline-block;
 			height: 100%;
 			vertical-align: middle;
+		}
+
+		img:hover {
+			cursor: pointer;
 		}
 	</style>
 </head>
@@ -98,7 +118,7 @@
 					<p class="text-justify">Firebase features the Firebase console which contains all of the features mentioned above.</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 valign-frame">
-					<span class="valign-helper"></span><img class="img-responsive valign" src="img/firebase/firebase_icon.png">
+					<span class="valign-helper"></span><img class="img-responsive valign" src="img/firebase/firebase_icon.png" onclick="window.location.href = 'https://firebase.google.com/'">
 				</div>
 			</div>
 		</div>
@@ -107,23 +127,51 @@
 		<div class="container home-section">
 			<h1 class="page-header-right">Firebase Authentication</h1>
 			<div class="row">
-				<div class="col-xs-12 col-sm-6 pull-right" style="text-align: right;">
-					<p class="lead text-justify">Firebase authentication provides APIs for user identity services.</p>
+				<div class="col-xs-12 col-sm-6 valign-frame img-show">
+					<span class="valign-helper"></span><img class="img-responsive valign" src="img/firebase/firebase_auth.png" onclick="window.location.href = 'https://firebase.google.com/docs/auth/'">
+				</div>
+				<div class="col-xs-12 col-sm-6" style="text-align: right;">
+					<p class="lead text-justify-right-content">Firebase authentication provides APIs for user identity services<span class="text-justify-right">.</span></p>
 					<h2>FirebaseUI Authentication</h2>
-					<p class="text-justify right">FirebaseUI Authentication provides ready-made UI libraries for handling user sign-in services in your app. Users can sign in with their email address and password into your Firebase application.</p>
-					<!-- https://stackoverflow.com/questions/10684533/text-align-justify-but-to-the-right see to solve issue-->
+					<p class="text-justify-right-content">FirebaseUI Authentication provides ready-made UI libraries for handling user sign-in services in your app. Users can sign in with their email address and password into your Firebase application<span class="text-justify-right">.</span></p>
+					<h2>Firebase SDK Authentication</h2>
+					<p class="text-justify-right-content">This Service Development Kit allows developers to implement sign-in using emails and passwords. It also handles the sending of password reset emails<span class="text-justify-right">.</span></p>
+				</div>
+				<div class="col-xs-12 col-sm-6 valign-frame img-hide">
+					<span class="valign-helper"></span><img class="img-responsive valign" src="img/firebase/firebase_auth.png" onclick="window.location.href = 'https://firebase.google.com/docs/auth/'">
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container-fluid" style="background-color: #E57373; color: #FFF;">
 		<div class="container home-section">
-			
+			<h1>Firebase Push Notifications</h1>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<p class="lead text-justify">Firebase also supports push notifications through Firebase Cloud Messaging (FCM). Developers can send notification messages to devices.</p>
+					<h2>Replacement for <code>AlarmManager</code></h2> 
+					<p class="text-justify">Currently, <code>AlarmManager</code> is the library used by Android developers to set "alarms" for CPU wakelocks to execute code, even when the device is in Doze Mode or on standby mode. On pure Android, Google-manufactured devices like the Nexus/Pixel series, this library works perfectly fine. But in the real world where companies like Xiaomi release custom kernels with custom security features, the developer's "alarm"s tend to get killed fairly easy. With Firebase, we can circumvent these problems.</p>
+					<h2>Message Types</h2>
+					<p class="text-justify">With FCM, developers can send two types of messages: Notification messages, which are displayed on end-user devices on behalf of the client app, or Data messages, which contain only custom key-value pairs containing information which the client application can process.</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 valign-frame">
+					<span class="valign-helper"></span><img class="img-responsive valign" src="img/firebase/firebase_notifications.png" style="width: 100%;" onclick="window.location.href = 'https://firebase.google.com/docs/cloud-messaging/'">
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="container-fluid" style="background-color: #7CB342; color: #FFF;">
 		<div class="container home-section">
-			
+			<h1 class="page-header-right">Improved User-Friendliness</h1>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 pull-right" style="text-align: right;">
+					<p class="lead text-justify-right-content">Lastly, we hope that FullUse will be as in tandem as possible with the wishes of the users<span class="text-justify-right">.</span></p>
+					<h2>Sort By Date</h2>
+					<p class="text-justify-right-content">Users have requested through our forms that they would like to see their tasks and events in a "date overview" fashion.<span class="text-justify-right">.</span></p>
+					<h2>iOS/Web Client</h2>
+					<p class="text-justify-right-content">We might consider making an iOS/Web FullUse client so as to reach out to as many users as possible<span class="text-justify-right">.</span></p>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

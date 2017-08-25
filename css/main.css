@@ -141,6 +141,22 @@ img.img-team {
 	}
 }
 
+.text-justify-right {
+	float:right;
+}
+
+.text-justify-right-content {
+	direction: rtl;
+	text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+	.text-justify-right {float: none;}
+	.text-justify-right-content {
+		direction: ltr;
+	}
+}
+
 
 
 
