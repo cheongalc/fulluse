@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#8BC34A</item>
+        <item name="colorPrimaryDark">#689F38</item>
+        <item name="colorAccent">#FF6D00</item>
+        <item name="android:timePickerStyle" tools:targetApi="lollipop">@style/AppTheme.TimePickerThemeRadial</item>
+    </style>
+    
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/backgroundColorTranslucent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Dim" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.TimePickerThemeRadial" parent="android:Widget.Material.Light.TimePicker" tools:targetApi="lollipop">
+        <item name="android:timePickerMode">clock</item>
+    </style>
+    
+    <style name="TimePickerThemeWhite" parent="android:Widget.Material.Light.TimePicker" tools:targetApi="lollipop">
+        <item name="android:timePickerMode">clock</item>
+        <item name="android:colorAccent">#FFFFFF</item>
+    </style>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <EditText
+        android:id="@+id/userNickEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/textColorPrimary"
+        android:backgroundTint="@color/white"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/tv_userNick3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/userNickEditText"
+        android:layout_margin="8dp"
+        android:text="What's your name?"
+        android:textSize="25sp"
+        android:textColor="@color/textColorPrimary"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_userNick2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_userNick3"
+        android:text="Welcome to FullUse."
+        android:textSize="30sp"
+        android:textColor="@color/textColorPrimary"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_userNick2"
+        android:layout_marginBottom="20dp"
+        android:textSize="40sp"
+        android:textColor="@color/textColorPrimary"
+        android:text="Hi."
+        android:textAlignment="center" />
+
+</RelativeLayout>

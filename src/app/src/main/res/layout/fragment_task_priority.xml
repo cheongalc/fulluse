@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/tv_taskPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/fragment_stt_priority"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/fragment_task_title"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_task_fertilizer"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_taskPriority"
+        android:layout_margin="32dp"/>
+
+    <TextView
+        android:id="@+id/tv_taskPriorityDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_taskPriority"
+        android:text="This denotes how important a task is. Your task list will be sorted according to priority."
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/fragment_task_desc"
+        android:textAlignment="center"
+        android:padding="24dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_taskPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_taskPriorityDesc"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+        <RadioButton
+            android:id="@+id/rb_priorityLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/rb_task_background"
+            android:padding="16dp"
+            android:textColor="@color/textColorPrimary"
+            android:text="Low" />
+        <RadioButton
+            android:id="@+id/rb_priorityMed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/rb_task_background"
+            android:padding="16dp"
+            android:textColor="@color/textColorPrimary"
+            android:text="Medium"/>
+        <RadioButton
+            android:id="@+id/rb_priorityHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/rb_task_background"
+            android:padding="16dp"
+            android:textColor="@color/textColorPrimary"
+            android:text="High"/>
+    </RadioGroup>
+
+</RelativeLayout>

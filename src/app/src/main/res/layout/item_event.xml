@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_itemEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_eventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Name"
+                android:textColor="@color/cardview_default_title_textColor"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_eventTiming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_eventName"
+                android:text="1300 - 1400"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_modifyEventButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_eventName"
+                android:layout_alignBottom="@id/tv_eventTiming"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbtn_editEvent"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:clickable="true"
+                    android:onClick="editEvent"/>
+
+                <ImageButton
+                    android:id="@+id/imgbtn_deleteEvent"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_delete_black_24dp"
+                    android:clickable="true"
+                    android:onClick="deleteEvent"/>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_eventStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ll_modifyEventButtons"
+                android:text="6/11/2017"
+                android:textSize="15sp"
+                android:textColor="@color/cardview_default_title_textColor"/>
+
+            <TextView
+                android:id="@+id/tv_eventEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_eventStartDate"
+                android:layout_toLeftOf="@id/ll_modifyEventButtons"
+                android:text="to 6/13/2017"
+                android:textSize="15sp"
+                android:textColor="@color/cardview_default_title_textColor"/>
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

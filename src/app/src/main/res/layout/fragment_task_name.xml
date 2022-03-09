@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/tv_taskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/fragment_stt_title"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/fragment_task_title"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_task_seed"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_taskTitle"
+        android:layout_margin="32dp" />
+
+    <EditText
+        android:id="@+id/et_taskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_taskTitle"
+        android:layout_margin="16dp"
+        android:textColor="@color/textColorPrimary"
+        android:hint="Enter title here..."
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <LinearLayout
+        android:layout_below="@id/et_taskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_tags"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/ll_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+
+        <EditText
+            android:id="@+id/et_addTag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Add Tag..."
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:inputType="text|textCapCharacters"
+            android:maxLines="1"
+            android:maxLength="15"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

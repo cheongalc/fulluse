@@ -1,0 +1,11 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawable="@drawable/ic_shoot_75"
+    tools:targetApi="lollipop">
+    <target
+        android:name="cloud2"
+        android:animation="@animator/cloud2_move"/>
+    <target
+        android:animation="@animator/cloud3_move"
+        android:name="cloud3"/>
+</animated-vector>

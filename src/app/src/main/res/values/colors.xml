@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8bc34a</color>
+    <color name="colorPrimaryDark">#689f38</color>
+    <color name="colorPrimaryDarkShowcase">#f5689f38</color>
+    <color name="textColorPrimary">#FFFFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#FF6D00</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cardview_default_title_textColor">#000</color>
+    <color name="backgroundColor">#EEEEEE</color>
+    <color name="backgroundColorTranslucent">#7ceeeeee</color>
+    <color name="backgroundColorTranslucent2">#9e000000</color>
+    <color name="ground">#3E2723</color>
+    <color name="wdpWhite">#fafafa</color>
+    <color name="treeSkyBkgd">#3e2723</color>
+    <color name="cardviewTranslucentBackground">#c5ffffff</color>
+    <color name="ccvEventColor">#1b5e20</color>
+    <color name="ccvEventCompletedBackground">#e0e0e0</color>
+    <color name="overDueTask">#d50000</color>
+</resources>

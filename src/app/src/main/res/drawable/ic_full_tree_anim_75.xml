@@ -1,0 +1,11 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawable="@drawable/ic_full_tree_75"
+    tools:targetApi="lollipop">
+    <target
+        android:name="cloud2"
+        android:animation="@animator/cloud2_move"/>
+    <target
+        android:name="cloud3"
+        android:animation="@animator/cloud3_move" />
+</animated-vector>

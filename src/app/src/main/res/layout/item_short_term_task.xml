@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_taskName"
+        android:layout_width="300dp"
+        android:maxWidth="300dp"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        android:textSize="20sp"
+        android:textColor="@color/cardview_default_title_textColor"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/tv_taskDueDate"
+        android:layout_alignStart="@+id/tv_taskDueDate"
+        android:inputType="text"
+        android:maxLines="1"
+        android:clickable="true"
+        android:onClick="editShortTermTask"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Due Date"
+        android:id="@+id/tv_taskDueDate"
+        android:layout_below="@+id/tv_taskName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="4dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_taskDueDate"
+        android:layout_toEndOf="@id/tv_taskDueDate"
+        android:layout_alignBottom="@id/tv_taskDueDate"
+        android:layout_marginLeft="8dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@id/tv_taskName"
+        android:layout_alignBottom="@id/tv_taskDueDate"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tv_taskPriority"
+            android:text="!!!"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/cardview_default_title_textColor"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"/>
+
+        <CheckBox
+            android:id="@+id/cb_deleteTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="completeShortTermTask"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

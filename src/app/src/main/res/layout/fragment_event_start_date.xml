@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/iv_eventStartDate"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_task_greenhouse"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="32dp"/>
+
+    <TextView
+        android:id="@+id/tv_eventStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_eventStartDate"
+        android:text="Event Start Date &amp; Time"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/fragment_task_title"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_eventStartDateDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_eventStartDate"
+        android:text="This specifies when your event starts. You will be notified 1 hour, 30 min, 15 min and 5 min before event starts."
+        android:textSize="@dimen/fragment_task_desc"
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary"
+        android:padding="24dp"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tv_eventStartDateDesc"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<com.aigestudio.wheelpicker.widgets.WheelDatePicker-->
+            <!--android:id="@+id/wdp_eventStartDate"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"/>-->
+
+        <!--<com.aigestudio.wheelpicker.WheelPicker-->
+            <!--android:id="@+id/wp_fromTime"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.5"-->
+            <!--app:wheel_cyclic="true"-->
+            <!--app:wheel_visible_item_count="5"-->
+            <!--app:wheel_item_text_color="@color/colorPrimary"-->
+            <!--app:wheel_selected_item_text_color="@color/wdpWhite"-->
+            <!--android:layout_gravity="center" />-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_eventStartDateDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/ll_eventStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_eventStartDateDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="28/6/2017"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/textColorPrimary"/>
+
+            <Button
+                android:id="@+id/btn_changeEventStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Change Date"
+                android:clickable="true"
+                android:onClick="showChangeStartDateDialog"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_eventStartTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_eventStartTimeDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="10:30"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/textColorPrimary"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_changeEventStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Change Time"
+                android:clickable="true"
+                android:onClick="showChangeStartTimeDialog"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

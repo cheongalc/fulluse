@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/rl_addNormalEvent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_addEvent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/ll_addLTT">
+
+        <ImageButton
+            android:id="@+id/imgbtn_eventFragment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_task_imgbtn_deselected"
+            android:tag="1"
+            android:clickable="true"
+            android:onClick="selectFragment"
+            android:padding="16dp"/>
+        <ImageButton
+            android:id="@+id/imgbtn_eventFragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_task_imgbtn_deselected"
+            android:tag="2"
+            android:clickable="true"
+            android:onClick="selectFragment"
+            android:padding="16dp"/>
+        <ImageButton
+            android:id="@+id/imgbtn_eventFragment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_task_imgbtn_deselected"
+            android:tag="3"
+            android:clickable="true"
+            android:onClick="selectFragment"
+            android:padding="16dp"/>
+        <ImageButton
+            android:id="@+id/imgbtn_eventFragment4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_task_imgbtn_deselected"
+            android:tag="4"
+            android:clickable="true"
+            android:onClick="selectFragment"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back_white_24dp"
+        android:clickable="true"
+        android:onClick="closeActivity"/>
+
+    <ImageButton
+        android:id="@+id/imgbtn_addSTT"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_done_white_24dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:onClick="addEvent"/>
+
+</RelativeLayout>

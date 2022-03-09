@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Notifications">
+        <SwitchPreference
+            android:key="isNotificationEnabled"
+            android:title="Toggle Notifications"
+            android:summaryOn="Notifications are enabled."
+            android:summaryOff="Notifications are disabled." />
+        <com.fulluse.TimePickerPreference
+            android:key="notificationTiming"
+            android:title="Set Notification Time"
+            android:summary="Set the time for task notifications to arrive."/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="User Tree">
+        <EditTextPreference
+            android:key="username"
+            android:title="Edit Username"
+            android:summary="The Username adds a personal touch to your Tree."
+            android:inputType="text"
+            android:maxLines="1" />
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

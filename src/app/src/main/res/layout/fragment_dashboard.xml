@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_tabFragment2">
+
+    <ScrollView
+        android:id="@+id/sv_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.fulluse.AspectRatioImageView
+                android:id="@+id/aiv_userTree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_full_tree_100"
+                android:elevation="4dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+
+            <View
+                android:id="@+id/v_groundBuffer"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_below="@id/aiv_userTree"
+                android:background="@color/ground" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/v_groundBuffer"
+                android:text="Alistair Cheong's Tree"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="20sp"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:elevation="4dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_userTreeGrowth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_username">
+                <ProgressBar
+                    android:id="@+id/pb_userTreeGrowthBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="79"
+                    android:progressDrawable="@drawable/user_tree_progress"/>
+
+                <TextView
+                    android:id="@+id/tv_userTreeGrowthPercentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/pb_userTreeGrowthBar"
+                    android:text="79%"
+                    android:textColor="@color/textColorPrimary"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_userTreeGrowth"
+                android:layout_marginTop="16dp">
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pb_userTreeWaterBar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/user_tree_water"/>
+                <TextView
+                    android:id="@+id/tv_userTreeWaterPercentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/pb_userTreeWaterBar"
+                    android:text="100%"
+                    android:textColor="@color/textColorPrimary"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@id/v_groundBuffer"
+                android:id="@+id/cv_dashboardStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_padding"
+                android:elevation="4dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_numTasks"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_centerHorizontal="true">
+
+                            <TextView
+                                android:id="@+id/tv_tasksInList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="16"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/cardview_default_title_textColor"
+                                android:textAlignment="center"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:id="@+id/tv_tasksInListText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TASKS"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_gravity="center_horizontal"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_numDone"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_centerHorizontal="true">
+
+                            <TextView
+                                android:id="@+id/tv_tasksCompleted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/cardview_default_title_textColor"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:id="@+id/tv_tasksCompletedText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DONE"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_gravity="center_horizontal"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_numTrees"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tv_treesCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/cardview_default_title_textColor"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:id="@+id/tv_treesCountText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TREES"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_gravity="center_horizontal"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

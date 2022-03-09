@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/treeSkyBkgd">
+
+    <TextView
+        android:id="@+id/tv_morningReviewDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="8dp"
+        android:text="You're done"
+        android:textSize="25sp"
+        android:textColor="@color/textColorPrimary"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_done_white_24dp"
+        android:layout_above="@id/tv_morningReviewDone"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_morningReviewClosure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_morningReviewDone"
+        android:padding="8dp"
+        android:text="Come back tomorrow for your next review."
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/tv_morningReviewClosure"
+        android:text="FINISH"
+        android:clickable="true"
+        android:onClick="finishReview"/>
+
+</RelativeLayout>

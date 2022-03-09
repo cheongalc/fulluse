@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_mesosphere">
+
+    <TextView
+        android:id="@+id/tv_detailedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Thursday, 8 June 2017"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_dayNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_detailedDate"
+        android:padding="16dp"
+        android:text="DAY #123"
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="50sp"/>
+
+</RelativeLayout>

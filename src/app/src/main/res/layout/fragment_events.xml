@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                android:id="@+id/ccv_pickDate"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="250dp"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextSize="14sp"
+                app:compactCalendarBackgroundColor="@color/colorPrimary"
+                app:compactCalendarTextColor="#fff"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorPrimaryDark"
+                app:compactCalendarCurrentDayBackgroundColor="#AED581"
+                app:compactCalendarMultiEventIndicatorColor="#e1e1e1"
+                android:elevation="4dp" />
+
+            <TextView
+                android:id="@+id/tv_eventsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ccv_pickDate"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="6/11/2017 Events"
+                android:textSize="@dimen/cardview_default_title_textSize"
+                android:textColor="@color/cardview_default_title_textColor"/>
+
+            <ImageButton
+                android:id="@+id/imgbtn_toggleCalendarVisibility"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignRight="@id/tv_eventsTitle"
+                android:layout_alignTop="@id/tv_eventsTitle"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:tag="1"/>
+
+            <com.fulluse.ExpandableHeightListView
+                android:id="@+id/ehlv_userEvents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_eventsTitle"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

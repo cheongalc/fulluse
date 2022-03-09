@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/iv_eventEndDate"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_potted_plant_2"
+        android:layout_margin="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_eventEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_eventEndDate"
+        android:text="Event End Date &amp; Time"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/fragment_task_title"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_eventEndDateDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_eventEndDate"
+        android:text="This specifies when your event ends. Change this for your event to span across multiple days."
+        android:textSize="@dimen/fragment_task_desc"
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary"
+        android:padding="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_eventEndDateDesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/ll_eventEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_eventEndDateDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="28/6/2017"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/textColorPrimary"/>
+
+            <Button
+                android:id="@+id/btn_changeEventEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Change Date"
+                android:clickable="true"
+                android:onClick="showChangeEndDateDialog"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_eventEndTimeDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="10:30"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/textColorPrimary"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_changeEventEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Change Time"
+                android:clickable="true"
+                android:onClick="showChangeEndTimeDialog"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

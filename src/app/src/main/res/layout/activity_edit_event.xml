@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@android:color/transparent"
+        android:onClick="finishEditing"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:elevation="4dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_editEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Event"
+                    android:textSize="@dimen/cardview_default_title_textSize"
+                    android:textColor="@color/cardview_default_title_textColor"/>
+
+                <TableLayout
+                    android:id="@+id/tl_editEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_editEvent">
+                    <TableRow
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:text="Title"
+                            android:textColor="@color/cardview_default_title_textColor"
+                            android:layout_gravity="center_vertical"/>
+
+                        <EditText
+                            android:id="@+id/et_editEvent"
+                            android:layout_weight="1"
+                            android:hint="Enter title here..."
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/cardview_default_title_textColor"
+                            android:textSize="20sp" />
+
+                    </TableRow>
+                    <TableRow
+                        android:padding="8dp">
+                        <TextView
+                            android:text="Start Date"
+                            android:textColor="@color/cardview_default_title_textColor"
+                            android:layout_gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/tv_eventStartDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="7/5/2017"
+                            android:textColor="@color/cardview_default_title_textColor"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+
+                        <Button
+                            android:id="@+id/btn_changeEventStartDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Change"
+                            android:onClick="showChangeStartDateDialog"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:text="Start Time"
+                            android:textColor="@color/cardview_default_title_textColor" />
+
+                        <TextView
+                            android:id="@+id/tv_eventStartTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="10:05"
+                            android:textColor="@color/cardview_default_title_textColor"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                        <Button
+                            android:id="@+id/btn_changeEventStartTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Change"
+                            android:onClick="showChangeStartTimeDialog"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:text="End Date"
+                            android:textColor="@color/cardview_default_title_textColor" />
+
+                        <TextView
+                            android:id="@+id/tv_eventEndDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="7/5/2017"
+                            android:textColor="@color/cardview_default_title_textColor"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+
+                        <Button
+                            android:id="@+id/btn_changeEventEndDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Change"
+                            android:onClick="showChangeEndDateDialog"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:text="End Time"
+                            android:textColor="@color/cardview_default_title_textColor" />
+
+                        <TextView
+                            android:id="@+id/tv_eventEndTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="17:15"
+                            android:textColor="@color/cardview_default_title_textColor"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+
+                        <Button
+                            android:id="@+id/btn_changeEventEndTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Change"
+                            android:onClick="showChangeEndTimeDialog"/>
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/btn_finishSTTEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DONE"
+                    android:layout_below="@id/tl_editEvent"
+                    android:layout_alignParentRight="true"
+                    android:onClick="finishEditing"/>
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

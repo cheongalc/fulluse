@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/tv_STTintro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/fragment_stt_intro_title"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/fragment_task_title"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_event_white_24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_STTintro"
+        android:layout_margin="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_STTintro"
+        android:text="@string/fragment_stt_desc"
+        android:textSize="@dimen/fragment_task_desc"
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary"
+        android:padding="24dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/iv_sttDueDate"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_task_greenhouse"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="28dp"/>
+
+    <TextView
+        android:id="@+id/tv_lttEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_sttDueDate"
+        android:text="@string/fragment_stt_duedate"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/fragment_task_title"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_lttEndDateDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_lttEndDate"
+        android:text="@string/fragment_stt_dueDate_desc"
+        android:textSize="@dimen/fragment_task_desc"
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary"
+        android:padding="24dp"/>
+
+    <com.aigestudio.wheelpicker.widgets.WheelDatePicker
+        android:id="@+id/wdp_sttEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_lttEndDateDesc"
+        android:layout_gravity="center" />
+
+
+</RelativeLayout>

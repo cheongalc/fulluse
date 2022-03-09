@@ -1,0 +1,11 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawable="@drawable/ic_full_tree_0"
+    tools:targetApi="lollipop">
+    <target
+        android:animation="@animator/suninner_pulsate"
+        android:name="sunInner" />
+    <target
+        android:animation="@animator/sunouter_pulsate"
+        android:name="sunOuter"/>
+</animated-vector>
